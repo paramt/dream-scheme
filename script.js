@@ -50,11 +50,11 @@ function generateScript() {
             break;
 
         case "friend":
-            script += "My friend ";
+            script += "my friend ";
             break;
 
         case "both":
-            script += "Me and my friend ";
+            script += "me and my friend ";
             break;
     }
 
@@ -85,7 +85,7 @@ function generateScript() {
             break;
     }
 
-    script += "Anyways, back to the video";
+    script += "Anyways, back to the video.";
 
     document.getElementById("title").innerHTML = title;
     document.getElementById("script").innerHTML = script;
