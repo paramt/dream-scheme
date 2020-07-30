@@ -14,7 +14,7 @@ function generateScript() {
     const optionsBox = document.getElementById("options");
     const scriptBox = document.getElementById("scriptBox");
 
-    const a = document.getElementById("a").value.toLowerCase();
+    const a = document.getElementById("a").value.toLowerCase().trim();
     const b = document.getElementById("b").value;
     const c = document.getElementById("c").value;
     const d = document.getElementById("d").value;
