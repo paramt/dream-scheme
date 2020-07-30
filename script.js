@@ -48,11 +48,11 @@ function generateScript() {
 
     switch(c) {
         case "yes":
-            script+= "Our goal is to defeat the ender dragon. If one of us dies, we lose. ";
+            script+= "Our goal is to beat the ender dragon. If one of us dies, we lose. ";
             break;
 
         case "no":
-            script += "My goal is to defeat the ender dragon. If I get killed once, I lose. "
+            script += "My goal is to beat the ender dragon. If I get killed once, I lose. "
             break;
     }
 
