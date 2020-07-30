@@ -114,6 +114,25 @@ input, textarea, select {
 }
 
 
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .box {
+        width: 500px;
+    }
+
+    input, select, .box button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 70px;
