@@ -1,0 +1,143 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2e2f4a;
+    margin: 0;
+}
+
+.main {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.7s;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 90px;
+    color: white;
+    line-height: 1;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: 200;
+    color: white;
+    margin-top: 0;
+}
+
+h2 a {
+    color: #529dff;
+    transition: color 0.2s;
+}
+
+h2 a:hover {
+    color: white;
+}
+
+
+p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    padding:10px;
+    font-size: 25px;
+    font-family: "Open Sans";
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #171721;
+    color: white;
+    width: 700px;
+    margin: 10px;
+    transition: opacity 0.5s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #0e0e14;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding: 40px 30px;
+    transition: opacity 0.5s;
+}
+
+.box h2 {
+    color: #2e2f4a;
+    font-weight: 600;
+    margin: 0;
+}
+
+.box h3 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.box p {
+    color: #2e2f4a;
+    font-size: 25px;
+}
+
+.box button {
+    width: 600px;
+}
+
+input, textarea, select {
+    padding:10px;
+    font-size: 20px;
+    font-family: "Open Sans";
+    margin: 10px 0;
+    width: 600px;
+    outline: none;
+    border: 1px solid #2e2f4a;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #2e2f4a;
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    h1 .light {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .box {
+        width: 300px;
+    }
+
+    input, textarea, select, .box button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

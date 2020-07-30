@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" rel="stylesheet">
+        <title>Dream Scheme</title>
+    </head>
+    <body>
+        <div id="main" class="main">
+            <h1><br>Dream Scheme</h1>
+            <h2>Generate <a href="https://www.youtube.com/user/DreamTraps">Dream</a>esque video scripts</h2>
+            <div id="buttons">
+                <button id="start-btn" onclick="start();">Start</button>
+            </div>
+        </div>
+
+        <form id="wrapper" onsubmit="generateScript(); return false;">
+            <div class="box" id="options" style="display: none;">
+                <h2>Video details</h2>
+
+                <input id="a" required type="text" placeholder="What's the twist?">
+
+                <select id="b" required >
+                    <option value="" selected disabled>Who coded the plugin?</option>
+                    <option value="me">Me</option>
+                    <option value="friend">My friend</option>
+                    <option value="both">Me and my friend</option>
+                </select>
+
+                <select id="c" required>
+                    <option value="" selected disabled>Are you working as a team?</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <input id="d" required type="number" min="0" max="100" placeholder="What % of viewers are subscribed?">
+
+                <select id="e" required>
+                    <option value="" selected disabled>What are you trying to promote?</option>
+                    <option value="merch">Merch</option>
+                    <option value="youtooz">Youtooz</option>
+                    <option value="nothing">Nothing</option>
+                </select>
+
+
+                <button type="submit">Go</button>
+            </div>
+
+            <div class="box" id="scriptBox" style="display: none; position: absolute; top: 0;">
+                <h3 id="title"></h3>
+                <p id="script"></p>
+            </div>
+
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
