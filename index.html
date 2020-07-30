@@ -45,13 +45,14 @@
                     <option value="nothing">Nothing</option>
                 </select>
 
-
                 <button type="submit">Go</button>
             </div>
 
-            <div class="box" id="scriptBox" style="display: none; position: absolute; top: 0;">
+            <div class="box" id="scriptBox">
                 <h3 id="title"></h3>
                 <p id="script"></p>
+
+                <button id="copy-btn" onclick="copyToClipboard(document.getElementById('script').innerHTML);">Copy</button>
             </div>
 
         </form>

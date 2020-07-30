@@ -62,9 +62,13 @@ button {
     transition: opacity 0.5s;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     background-color: #0e0e14;
+}
+
+button:disabled {
+    cursor: default;
 }
 
 #wrapper {
@@ -98,6 +102,18 @@ button:hover{
 
 .box button {
     width: 600px;
+}
+
+#scriptBox {
+    display: none;
+    position: absolute;
+    top: 0;
+    margin-bottom: 100px;
+}
+
+#scriptBox button {
+    width: 100%;
+    margin: 0;
 }
 
 input, textarea, select {

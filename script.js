@@ -10,6 +10,20 @@ function start() {
     document.getElementById("options").style.display = "block";
 }
 
+const copyToClipboard = value => {
+    var temp = document.createElement("textarea");
+    temp.value = value;
+    document.body.appendChild(temp);
+    temp.select();
+    document.execCommand("copy");
+    document.body.removeChild(temp);
+
+    document.getElementById("copy-btn").style.backgroundColor = "#115c26";
+    document.getElementById("copy-btn").innerHTML = "Copied!";
+    document.getElementById("copy-btn").disabled = true;
+}
+
+
 function generateScript() {
     const optionsBox = document.getElementById("options");
     const scriptBox = document.getElementById("scriptBox");
