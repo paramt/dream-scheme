@@ -42,10 +42,10 @@ h2 a:hover {
     color: white;
 }
 
-
 p {
-    color: white;
     font-family: 'Open Sans', sans-serif;
+    color: #2e2f4a;
+    font-size: 25px;
 }
 
 button {
@@ -96,11 +96,6 @@ button:hover{
     font-size: 35px;
 }
 
-.box p {
-    color: #2e2f4a;
-    font-size: 25px;
-}
-
 .box button {
     width: 600px;
 }
@@ -124,20 +119,28 @@ input, textarea, select {
         font-size: 70px;
     }
 
-    h1 .light {
-        font-size: 45px;
-    }
-
     h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .box {
         width: 300px;
     }
 
-    input, textarea, select, .box button {
+    .box h3 {
+        font-size: 25px;
+    }
+
+    button {
+        width: 300px;
+    }
+
+    input, select, .box button {
         width: 100%;
         box-sizing: border-box;
+    }
+
+    p {
+        font-size: 20px;
     }
 }
